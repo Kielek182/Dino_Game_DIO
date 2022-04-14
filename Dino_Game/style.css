@@ -1,0 +1,49 @@
+body{
+    background: #fafafa;
+}
+
+.Fundo_Game{
+    background-image: url(Imagens/background.png);
+    bottom: 0;
+    position: absolute;
+    background-repeat: repeat-x;/*horizontal*/
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+
+.Dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(Imagens/dino.png);
+    position: absolute;/*posso definir qualquer posição*/
+    bottom: 0;/*bemm embaixo,kkk*/
+}
+
+.cactus {
+    width: 60px;
+    height: 60px;
+    background-image: url(Imagens/cactus.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.Game_Over{
+    text-align: center;
+    background: antiquewhite;
+    color: #0f0e0e;
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideright{
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    } 
+}
+
